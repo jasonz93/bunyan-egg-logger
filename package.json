@@ -1,0 +1,33 @@
+{
+  "name": "bunyan-egg-logger",
+  "version": "1.0.0",
+  "description": "egg-logger adapter for bunyan",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jasonz93/bunyan-egg-logger.git"
+  },
+  "keywords": [
+    "bunyan",
+    "egg-logger",
+    "adapter"
+  ],
+  "author": "Sihao Zhang",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jasonz93/bunyan-egg-logger/issues"
+  },
+  "homepage": "https://github.com/jasonz93/bunyan-egg-logger#readme",
+  "dependencies": {
+    "bunyan": "^1.8.10",
+    "egg-logger": "^1.5.0",
+    "lodash": "^4.17.4"
+  },
+  "devDependencies": {
+    "istanbul": "^0.4.5",
+    "mocha": "^3.2.0"
+  }
+}
