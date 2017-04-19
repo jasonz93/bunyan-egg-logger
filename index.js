@@ -18,16 +18,17 @@ util.inherits(EggLoggerStream, stream.Writable);
 EggLoggerStream.prototype._write = function (record, _enc, cb) {
     let args = [];
     let msg = '';
+    msg += '[' + record.name + '] ';
+    delete record.name;
     if (record.err) {
         args.push(record.err);
         delete record.err;
     } else {
-        msg = record.msg;
+        msg += record.msg;
         delete record.msg;
     }
     let level = record.level;
     delete record.level;
-    delete record.name;
     delete record.time;
     delete record.v;
     delete record.pid;
